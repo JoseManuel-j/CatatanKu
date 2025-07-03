@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Tab pertama: Halaman utama (Expense Home) -->
+    <item
+        android:id="@+id/nav_books"
+        android:title="Home"
+        android:icon="@drawable/ic_books" />
+
+    <!-- Tab kedua: Riwayat transaksi atau pencatatan -->
+    <item
+        android:id="@+id/nav_wallet"
+        android:title="Transaksi"
+        android:icon="@drawable/ic_wallet" />
+
+    <!-- Tab ketiga: Tabungan atau finansial -->
+    <item
+        android:id="@+id/nav_savings"
+        android:title="Tabungan"
+        android:icon="@drawable/ic_saving" />
+
+</menu>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F8FB"
+    android:padding="16dp">
+
+    <!-- Header Card Tabungan -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textSavingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Savings"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#1C355E" />
+
+            <TextView
+                android:id="@+id/textSavingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:textColor="#27AE60"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/textSavingSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total amount saved"
+                android:textSize="14sp"
+                android:textColor="#7F8C8D"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Judul Recent Saving -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Savings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#34495E"
+        android:layout_marginBottom="12dp" />
+
+    <!-- RecyclerView Daftar Tabungan -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSavings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <!-- Tombol Tambah Tabungan -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddSaving"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="#27AE60"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Add Saving"
+        app:elevation="8dp" />
+
+</LinearLayout>
